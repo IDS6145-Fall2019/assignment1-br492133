@@ -1,8 +1,8 @@
 # Assignment 1 - Designing Models and Analyzing Data (Template)
 (remove: **text between brackets to be removed**)
 
-> * Participant name: (your name)
-> * Project Title: (Title of the problem you are looking and modeling)
+> * Participant name: Bradley 'Austin' Kriznar
+> * Project Title: SUBWAY MODEL ANALYSIS
 
 # General Introduction
 
