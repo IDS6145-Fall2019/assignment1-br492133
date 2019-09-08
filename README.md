@@ -14,7 +14,7 @@ The second part of the assignment explores data analysis. Data analysis and visu
 
 
 # Part 1: Designing a Model - Subway System
-
+Subway transportation is incredibly important for many metroplitian areas. It is magnitudes of order more effective for traffic mitigation than individuals using cars in their commutes, and so making sure existing subways queue efficiently is certianly a worthy priority for city planners.  
 (remove: States your motivation clearly: why is it important / interesting to solve this problem?)
 
 (remove: Add real-world examples, if any)
