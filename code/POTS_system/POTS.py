@@ -36,6 +36,7 @@ def WaitForKeyPress(L):
         finally:
             termios.tcsetattr(fd, termios.TCSAFLUSH, oldterm)
 
+            
     return result
 
 
