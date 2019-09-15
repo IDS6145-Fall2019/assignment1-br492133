@@ -31,13 +31,21 @@ There are a large number of examples of these kinds of queues. In London, the Un
 (remove: You should start by specifying a set of requirements. I specified a topic a Subway escalator. What exactly does that mean - practice formulating your own set of requirements and an experiment. Define problems cities face and hypothesize how a subway system could help alleviate these issue. This helps you think about your problem communication and system objectives inputs, functions, and outputs - they should be clearly specified.)
 
 The system **shall [01]** model subway entrance and exit escalators.
+
 The system **shall [02]** model an escalator compliant with ASME A17.1-2007/CSA B44-07, Safety Code for Elevators and Escalators, Part 6 Escalators and Moving Walks. 
+
 The system **shall [03]** have step deck of length between 22 in. and 40 in.
+
 The system **shall [04]** have step run of no less than 15.75 in. 
+
 The system **shall [05]** have step rise of no more than 8.5 in.  
+
 The system **shall [06]** model escalator incline at an angle of no greater than 30 degrees.
-The system **shall [07]** model belt speed not exceeding 100 ft / min. 
+
+The system **shall [07]** model belt speed not exceeding 100 ft / min.
+
 The system **shall [08]** model assume a constant belt speed.
+
 
 
 ## (Part 1.2) Subway (My Problem) Model **(10%)**
