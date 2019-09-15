@@ -1,3 +1,4 @@
+
 # Assignment 1 - Designing Models and Analyzing Data (Template)
 (remove: **text between brackets to be removed**)
 
@@ -15,6 +16,7 @@ The second part of the assignment explores data analysis. Data analysis and visu
 
 # Part 1: Designing a Model - Subway System
 Subway transportation is incredibly important for many metroplitian areas. It is magnitudes of order more effective for traffic mitigation than individuals using cars in their commutes, and so making sure existing subways queue / run efficiently is certianly a worthy priority for city planners.   
+
 (remove: States your motivation clearly: why is it important / interesting to solve this problem?)
 There are a large number of examples of these kinds of queues. In London, the Underground logs up to 5 million journeys a day. The majority of passengers must enter the Underground via escalator tunnels, especially in the dowtown area. Ensuring appropriete passenger safety entering and exiting the subway is important for smooth operation, balanced with speed (it would make no sense to have escalators when they are slower than just taking the stairs). 
 (remove: Add real-world examples, if any)
