@@ -62,7 +62,6 @@ The system **shall [08]** model assume a constant belt speed.
 
 (remove: Describe how you would simulate this - including type of simulation, rough details, inputs, outputs, and how it will help you analyze your experimental hypothesis, or nullify your null hypothesis.)
 
-
 ## (Part 1.4) Subway City (My Problem) Model **(10%)**
 [**Code template**](code/README.md) - Starting coding framework for the (insert your exact problem here.)
 You are expected to create the python files - the code should run without errors, create and object(s) for your system, but not provide function detail.
