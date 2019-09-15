@@ -7,6 +7,7 @@
 
 ![Example Object Diagram](../images/class_example_diagram.png)
 
+
 (remove: More decription)
 (remove: Maybe a second or third diagram to highlight a point or aspect)
 
