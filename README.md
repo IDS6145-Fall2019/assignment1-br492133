@@ -62,6 +62,8 @@ The system **shall [08]** model assume a constant belt speed.
 
 (remove: Describe how you would simulate this - including type of simulation, rough details, inputs, outputs, and how it will help you analyze your experimental hypothesis, or nullify your null hypothesis.)
 
+Ideally, I would use a dedicated tool to utilize for this simulation such as **Simio.** The escalator can be largely treated as a queue - people are assumed not to 'move' up or down on the escalator steps (releative to the escalator steps, they are not moving) and are 'processed' by the server at a fixed rate with a fixed speed. The stochastic flow of people into the server (escalator) would be based on sampled data (hourly, daily, weekly) collected from real turnstile or open sources. This is where the interesting part of the simulation - is the escalator too crowded? Is there a line to get onto the escalator? If so, how long is it? I would base my experiment with those questions in mind.  
+
 ## (Part 1.4) Subway City (My Problem) Model **(10%)**
 [**Code template**](code/README.md) - Starting coding framework for the (insert your exact problem here.)
 You are expected to create the python files - the code should run without errors, create and object(s) for your system, but not provide function detail.
