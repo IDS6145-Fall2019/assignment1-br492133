@@ -69,15 +69,25 @@ You are expected to create the python files - the code should run without errors
 
 
 ## (Part 1.5) Specifying the Inputs to a System **(10%)**
+* Specify the independent and dependent input variables of your subway escalator model
+Independent Variables – 
+* The **escalator step dimensions** are fixed and required to be a fixed size.
+* The **escalator belt speed** is assumed to be fixed. The number of people on the escalator does not have an effect on its speed as the real system is highly standardized. 
+* The **maximum step capacity** is assumed to be independent as we do not believe the escalator will change length, as with real life.
+Dependent Variables-
+* The **person arrival rate, lambda** is dependent on the time of day. This is based on the idea subways are likely used more at different times – we may expect that ridership (and thus escalator usage) is tied to when people are coming and going to work.
+* The **person size** is dependent on a few factors, including if they are a child (likely to be smaller and take only a single escalator step) or an adult (likely to be larger and may take a few steps up).
+* The **escalator queue entrance availability** is dependent on the number of people currently on the escalator. If the escalator is at a full steady-state, then a line will begin to form to get onto the escalator (assuming people are standing single-abreast). 
 
-(remove the below points once ideas are satisfied)
-* Specify the independent and dependent input variables of your subway esclator model
 * Specify where the data will come from measured subset of real data (empirical) or synthetic data
+Ideally, direct sampling to collect real data would be done use as the base of the simulation data. That is not really likely. Luckily, a few quick searches on Google provide large set of real turnstile / usage data directly from the (Metropolitan Transportation Authority)[ http://web.mta.info/developers/download.html]. While turnstile data does not directly map onto escalator use in subways, it could be a great starting point. 
 * What kind of statistics are important to capture this input data
+I think it would be important to capture basic descriptive statistics for arrival rates, escalator belt speed / size, and usage information as related to time of day / day of week.  
 * How do you plan to analyze the output of your model?
+It would be useful to determine and analyze what the queue length waiting to enter the escalator is on average (average wait time). That is probably the most productive question to get an answer for, especially if in a very-high traffic station such as Times Square. 
 * What ways will you visualize your data - charts, and graphs you will create?
+A line graph depicting average escalator wait time across a day, with each day represented as a separate line, could be a clear way to visualize traffic variability. It may also be interesting to see usage or non-usage data that is subway station dependent (are there escalators that cost more to operate in maintenance costs and electricity than is covered by the local ridership fare?). 
 * What clever way will you visualize your output with a useful infographic?
-
 
 
 # Part 2: Creating a Model from Code
