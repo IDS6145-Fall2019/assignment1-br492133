@@ -46,6 +46,25 @@ The system **shall [07]** model belt speed not exceeding 100 ft / min.
 
 The system **shall [08]** model assume a constant belt speed.
 
+* The system **shall [01]** model subway entrance and exit escalators.
+* The system **shall [02]** model an escalator compliant with ASME A17.1-2007/CSA B44-07, Safety Code for Elevators and Escalators, Part 6 Escalators and Moving Walks. 
+* The system **shall [03]** have step deck of length between 22 in. and 40 in.
+* The system **shall [04]** have step run of no less than 15.75 in. 
+* The system **shall [05]** have step rise of no more than 8.5 in.  
+* The system **shall [06]** model escalator incline at an angle of no greater than 30 degrees.
+* The system **shall [07]** model belt speed not exceeding 100 ft / min. 
+* The system **shall [08]** model assume a constant belt speed.
+* The system **shall [09]** model people riding an escalator.
+* They system **shall [10]** process input data of the file format Comma Separated Values
+* The system **shall [11]** analyze the model and be capable of outputting said analysis.
+* The system **shall [12]** analyze the model through use of descriptive statistics.
+* The system **shall [13]** utilize programming language Python for to model.
+* An object diagram **shall [14]** be used to describe the system.
+* A class diagram **shall [15]** be used to describe the system.
+* A state transition diagram **shall [16]** be used to describe the system.
+* An agent / user case diagram **shall [17]** be used to describe the system.
+
+
 
 
 ## (Part 1.2) Subway (My Problem) Model **(10%)**
