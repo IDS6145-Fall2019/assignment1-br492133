@@ -155,7 +155,7 @@ The comparison of the two could not be more distinct – the pseudo-random point
 ## (Part 3.3) -  Plotting 1D Random Distributions **(15%)**
 
 Now, choose three different distributions to plot in 1D, or as a histogram. Choose a pseudo-random generator and generate three different distributions. Example distributions are Uniform (part 8), Normal, Exponential, Poisson, and Chi-Squared, but feel free to use any three distributions of your choice. Again, plot each distribution for five different Ns. This will result in 15 different subplots, formatted similar to the image in Part 8. Include your properly formmated 1D plots below and breifly describe what we are looking at and how things change as N is changed.
-[**3_3 Code**](code/Quasi_Bar_Charts.py)
+[**3_3 Code**](code/3_3_Quasi_Bar_Charts.py)
 
 ![Test](images/Figure_3_3.png)
 
