@@ -145,3 +145,4 @@ Now, choose three different distributions to plot in 1D, or as a histogram. Choo
 ![Test](images/Figure_3_3.png)
 
 Repeat the above using a quasi-random generator. Discuss the similarities and differences.
+![Test](images/Figure_3_3_2.png)
