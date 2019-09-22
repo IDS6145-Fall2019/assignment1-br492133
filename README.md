@@ -149,6 +149,11 @@ Of the 100 New York MTA stations analyzed, approximately the top 30 by average w
 
 This portion of the assignment looks at generating random numbers in Python and understanding how to properly plot them. Plot two different random numbers, pseudo random and quasi random, for five different N values. There should be 10 subplots, all properly formatted 2D plots. Note, each of the N points will have two coordinates, an x and a y, therefore you will need to generate two random numbers for each point. You should replace the image with your results in a simalar format. Discuss how the patterns differ. Feel free to change the N values from the suggested N values in the image to state your case.
 
+[**3_2 Code**](code/Test3_2.py)
+
+The pseudo-random numbers are plotted with N-many points with respective x,y values generated with a random values and shifting seed values. The quasi-random points are created using the Sobol sequence of array length-N. The x-values are the linear Sobol sequence; the y-values are the same sequence offset by an index of 99. 
+
+The comparison of the two could not be more distinct – the pseudo-random points are ‘evenly’ distributed and appear to cluster and become denser radially as the number of points increase (the mean being 0 and standard deviation being 1); the quasi-random points exhibit extreme order and patterns. This makes sense as the Sobol values have a set sequence order - we would expect emergent patterns to be quite stark. The pseudo-random numbers don't exhibit order outside of the density observed toward the mean (this is expected).
 
 ![Test](images/Figure_3_2.png)
 
