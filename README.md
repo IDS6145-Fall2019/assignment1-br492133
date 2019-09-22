@@ -148,6 +148,8 @@ Of the 100 New York MTA stations analyzed, approximately the top 30 by average w
 ## (Part 3.2) -  Plotting 2D Random Number Generators **(15%)**
 
 This portion of the assignment looks at generating random numbers in Python and understanding how to properly plot them. Plot two different random numbers, pseudo random and quasi random, for five different N values. There should be 10 subplots, all properly formatted 2D plots. Note, each of the N points will have two coordinates, an x and a y, therefore you will need to generate two random numbers for each point. You should replace the image with your results in a simalar format. Discuss how the patterns differ. Feel free to change the N values from the suggested N values in the image to state your case.
+
+
 ![Test](images/Figure_3_2.png)
 
 
@@ -155,6 +157,10 @@ This portion of the assignment looks at generating random numbers in Python and 
 
 Now, choose three different distributions to plot in 1D, or as a histogram. Choose a pseudo-random generator and generate three different distributions. Example distributions are Uniform (part 8), Normal, Exponential, Poisson, and Chi-Squared, but feel free to use any three distributions of your choice. Again, plot each distribution for five different Ns. This will result in 15 different subplots, formatted similar to the image in Part 8. Include your properly formmated 1D plots below and breifly describe what we are looking at and how things change as N is changed.
 ![Test](images/Figure_3_3.png)
+
+3_1.py
+3_3_Bar_Charts.py
+3_3_Quasi_Bar_Charts.py
 
 Repeat the above using a quasi-random generator. Discuss the similarities and differences.
 ![Test](images/Figure_3_3_2.png)
