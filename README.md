@@ -17,9 +17,7 @@ The second part of the assignment explores data analysis. Data analysis and visu
 # Part 1: Designing a Model - Subway System
 Subway transportation is incredibly important for many metroplitian areas. It is magnitudes of order more effective for traffic mitigation than individuals using cars in their commutes, and so making sure existing subways queue / run efficiently is certianly a worthy priority for city planners.   
 
-(remove: States your motivation clearly: why is it important / interesting to solve this problem?)
 There are a large number of examples of these kinds of queues. In London, the Underground logs up to 5 million journeys a day. The majority of passengers must enter the Underground via escalator tunnels, especially in the dowtown area. Ensuring appropriete passenger safety entering and exiting the subway is important for smooth operation, balanced with speed (it would make no sense to have escalators when they are slower than just taking the stairs). 
-(remove: Add real-world examples, if any)
 
 (remove: Put the problem into a historical context, from what does it originate? Are there already some proposed solutions?)
 
@@ -27,8 +25,6 @@ There are a large number of examples of these kinds of queues. In London, the Un
 ![Image of Subway City System](images/subway_model.png)
 
 ## (Part 1.1): Requirements (Experimental Design) **(10%)**
-
-(remove: You should start by specifying a set of requirements. I specified a topic a Subway escalator. What exactly does that mean - practice formulating your own set of requirements and an experiment. Define problems cities face and hypothesize how a subway system could help alleviate these issue. This helps you think about your problem communication and system objectives inputs, functions, and outputs - they should be clearly specified.)
 
 * The system **shall [01]** model subway entrance and exit escalators.
 * The system **shall [02]** model an escalator compliant with ASME A17.1-2007/CSA B44-07, Safety Code for Elevators and Escalators, Part 6 Escalators and Moving Walks. 
@@ -47,8 +43,6 @@ There are a large number of examples of these kinds of queues. In London, the Un
 * A class diagram **shall [15]** be used to describe the system.
 * A state transition diagram **shall [16]** be used to describe the system.
 * An agent / user case diagram **shall [17]** be used to describe the system.
-
-
 
 
 ## (Part 1.2) Subway (My Problem) Model **(10%)**
