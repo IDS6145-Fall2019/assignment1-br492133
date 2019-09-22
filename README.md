@@ -124,12 +124,20 @@ Here [**we provide an overview**](code/POTS_system/README.md) of the **P**ortabl
 Find a datasource that looks at part of this model - subway stations locations / escalator number, heights, widths / volume of passangers - ridership numbers   (*fits* - we are pretty loose here, it can be anything.)
 
 * Write up a paragraph that describes the data and how it fits into your system.
+
+There is not really a lot of non-engineering information (see above about ASME standards) that directly applies to escalators, especially in respect to usage, available online. I think that it could be useful as a proxy to learn more about general subway ridership. Station ridership data gives a partial context of escalator use. To be clear, not everyone who enters or exits a subway uses escalators – options such as stairs minimize cost to maintain; elevators are ADA compliant and support wheelchair users. The ridership data is useful in the ideal model of the escalator as a way to roughly gauge queue lengths, especially if information about a particular station is known (number of entrances and exits, number of stairways, escalators, and elevators, etc.). This ridership data could be used to focus on which stations could see the greatest benefit from more extensive sensitivity analysis. Stations such as Grand Terminal Station and Madison Square Garden hare grouped into the ‘Top 10’ riders; these stations handle millions of trips per week. They represent ideal places to model comprehensively through the use of actual time sampling and data collection on-site.
+
 * Load the data into Python
 
 [**MTA_Station_Ridership_Data**](code/MTA_Stations_Data1.csv)
-[**3_1 Code with statistics output**](code/3_1.py)
 
 * Calculate a few useful statistic on the data - keep it simple- STD, means, etc..., this is just designed * to get used to working with real data. Explain the insights you derive from these statistics.
+
+Of the 100 New York MTA stations analyzed, approximately the top 30 by average weekly ridership made up over half the total rides. This suggests that most-likely to be used escalator models can be condensed to nearly 30 of interest to understand more than half of all MTA trips in New York. One interesting trend among the standard deviations is that the Weekend ridership variation is relatively quite high. This makes sense – tourism and events are more likely on the weekend and stable variation is expected during the week from routine commuters.  
+
+[**3_1 Code with statistics output**](code/3_1.py)
+
+
 * Visualize the raw data - visualize a few critical aspects of the data to better describe what it is, what it is showing, and why its useful to your system.
 * Calculate and plot some summary statistics that better describe the data.
 ![Test](images/Figure_3_1_1.png)
