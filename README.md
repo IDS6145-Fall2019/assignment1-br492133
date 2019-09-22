@@ -109,7 +109,7 @@ A line graph depicting average escalator wait time across a day, with each day r
 ## (Part 2.1) **P**ortable **O**rganic **T**rouble-free **S**elf-watering System (**POTS**) Model **(10%)**
 Here [**we provide an overview**](code/POTS_system/README.md) of the **P**ortable **O**rganic **T**rouble-free **S**elf-watering System (**POTS**) Model and provide a source code template for the code found in  [**the following folder**](code/POTS_system/). Please create a **class** diagram of this model (replace the placeholder diagram). (you can use paper and pencil or a digital tool).
 
-![**POTS Model Class Diagram**](images/POTS Class Diagram.png)
+[**POTS Model Class Diagram**](images/POTS_Class_Diagram.png)
 
 # Part 3: Data Analysis
 
