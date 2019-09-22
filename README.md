@@ -51,7 +51,8 @@ There are a large number of examples of these kinds of queues. In London, the Un
 (remove: Look at the [**Object Diagram**](model/object_diagram.md) for how to structure this part of Part 2 for each diagram. Only the Object diagram has the template, the rest are blank. )
 
 * [**Object Diagram**](model/object_diagram.md) - provides the high level overview of components
-* [**Class Diagram**](Subway_Class_Diagram.png) - provides details of
+
+[**Class Diagram**](Subway_Class_Diagram.png) - provides details of
 * [**Behavior Diagram**](model/behavior_diagram.md) - provides details of (what are you providing details of)
 * [**Agent / User case** (if appropriate)](model/agent_usecase_diagram.md) - provides details of (what are you providing details of)
 
