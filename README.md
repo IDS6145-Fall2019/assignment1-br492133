@@ -125,6 +125,10 @@ Find a datasource that looks at part of this model - subway stations locations /
 
 * Write up a paragraph that describes the data and how it fits into your system.
 * Load the data into Python
+
+[**MTA_Station_Ridership_Data**](code/MTA_Stations_Data1.csv)
+[**3_1 Code with statistics output**](code/3_1.py)
+
 * Calculate a few useful statistic on the data - keep it simple- STD, means, etc..., this is just designed * to get used to working with real data. Explain the insights you derive from these statistics.
 * Visualize the raw data - visualize a few critical aspects of the data to better describe what it is, what it is showing, and why its useful to your system.
 * Calculate and plot some summary statistics that better describe the data.
