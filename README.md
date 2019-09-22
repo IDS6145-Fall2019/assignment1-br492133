@@ -160,6 +160,6 @@ Now, choose three different distributions to plot in 1D, or as a histogram. Choo
 ![Test](images/Figure_3_3.png)
 
 Repeat the above using a quasi-random generator. Discuss the similarities and differences.
-[**3_3 2_Code**](code/Bar_Charts.py)
+[**3_3 2_Code**](code/3_3_Bar_Charts.py)
 
 ![Test](images/Figure_3_3_2.png)
