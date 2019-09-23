@@ -64,6 +64,8 @@ In context of Python, individual steps can have associated indices in the that h
 [**Code template**](code/README.md) - Starting coding framework for the (insert your exact problem here.)
 You are expected to create the python files - the code should run without errors, create and object(s) for your system, but not provide function detail.
 
+[**Basic Subway Model**](code/Subway_Model_2)
+
 
 
 ## (Part 1.5) Specifying the Inputs to a System **(10%)**
