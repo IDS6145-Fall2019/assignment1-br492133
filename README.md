@@ -34,20 +34,19 @@ There are a large number of examples of these kinds of queues. In London, the Un
 * The system **shall [07]** model belt speed not exceeding 100 ft / min. 
 * The system **shall [08]** model assume a constant belt speed.
 * The system **shall [09]** model people riding an escalator.
-* They system **shall [10]** process input data of the file format Comma Separated Values
-* The system **shall [11]** analyze the model and be capable of outputting said analysis.
-* The system **shall [12]** analyze the model through use of descriptive statistics.
-* The system **shall [13]** utilize programming language Python for to model.
-* An object diagram **shall [14]** be used to describe the system.
-* A class diagram **shall [15]** be used to describe the system.
-* A state transition diagram **shall [16]** be used to describe the system.
-* An agent / user case diagram **shall [17]** be used to describe the system.
+* The system **shall [10]** assume no more than one person per escalator step.
+* The system **shall [11]** assume people do not change escalator steps once on the escalator.
+* They system **shall [13]** process input data of the file format Comma Separated Values
+* The system **shall [14]** analyze the model and be capable of outputting said analysis.
+* The system **shall [15]** analyze the model through use of descriptive statistics.
+* The system **shall [16]** utilize programming language Python for to model.
+* An object diagram **shall [17]** be used to describe the system.
+* A class diagram **shall [18]** be used to describe the system.
+* A state transition diagram **shall [19]** be used to describe the system.
+* An agent / user case diagram **shall [20]** be used to describe the system.
 
 
 ## (Part 1.2) Subway (My Problem) Model **(10%)**
-
-(remove: add a high-level overview of your model, the part below should link to the model directory markdown files)
-(remove: Look at the [**Object Diagram**](model/object_diagram.md) for how to structure this part of Part 2 for each diagram. Only the Object diagram has the template, the rest are blank. )
 
 * [**Object Diagram**](images/Subway_Object_Diagram.png) - provides the high level overview of subway model objects.
 * [**Class Diagram**](images/Subway_Class_Diagram.png) - provides simple class detail for objects in the model.
@@ -60,7 +59,9 @@ There are a large number of examples of these kinds of queues. In London, the Un
 
 Ideally, I would use a dedicated tool to utilize for this simulation such as **Simio.** The escalator can be largely treated as a queue - people are assumed not to 'move' up or down on the escalator steps (relative to the escalator steps, they are not moving) and are 'processed' by the server at a fixed rate with a fixed speed. The stochastic flow of people into the server (escalator) would be based on sampled data (hourly, daily, weekly) collected from real turnstile or open sources. This is where the interesting part of the simulation - is the escalator too crowded? Is there a line to get onto the escalator? If so, how long is the line? How long are people waiting, on average, to actually utilize the escalator? I would base my experiment with those questions in mind. 
 
-Doing a little research, ASME standards govern the maximum escalator speed at 100 ft / min; anecdotally this seems like a fair representation to what I have personally experienced as an escalator's normal operating speed and should work as a simulated assumption. Additionally, assuming the ASME designation for step length of 8.5 in. and one person per step, the escalator can be treated roughly as the hypotenuse of an imaginary triangle (bound between the elevation gap (the rise) and the ground (the run)). That hypotenuse length dictates the server capacity in the model (hypotenuse length / 8.5 in. = approximate step number). Modeled as a queue, the 'escalator' has a server capacity equal to maximum step number; escalator users (agents) are 'processed' at a constant rate (process time = escalator speed / step number) and may enter the queue as the escalator stairs are made available **(at a constant rate )**. Escalators do not change size (the hypotenuse is fixed) and thus the queue capacity and time on escalator are constant.
+Doing a little research, ASME standards govern the maximum escalator speed at 100 ft / min; anecdotally this seems like a fair representation to what I have personally experienced as an escalator's normal operating speed and should work as a simulated assumption. Additionally, assuming the ASME designation for step length of 8.5 in. and one person per step, the escalator can be treated roughly as the hypotenuse of an imaginary triangle (bound between the elevation gap (the rise) and the ground (the run)). That hypotenuse length dictates the server capacity in the model (hypotenuse length / 8.5 in. = approximate step number). Modeled as a queue, the 'escalator' has a server capacity equal to maximum step number; escalator users (agents) are 'processed' at a constant rate (process time = escalator speed / step number) and may enter the queue as the escalator stairs are made available **(at a constant rate )**. Escalators do not change size (the hypotenuse is fixed) and thus the queue capacity and time on escalator are constant. 
+
+In context of Python, individual steps can have associated indices in the that have the associated state of occupied or unoccupied. Agents on the objects temporarily lock the step index until the have spent enough time being processed. Once the correct amount of time has passed, the rider leaves the step and the index is freed again to be used. One import constraint that would have to be considered with simulating the escalator this way is that only one index may be made available for agents at a time (i.e. if only four people are one an escalator with 100 steps, can 96 people instantly get on a step?).  
 
 
 ## (Part 1.4) Subway City (My Problem) Model **(10%)**
