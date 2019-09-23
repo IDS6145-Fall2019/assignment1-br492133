@@ -147,7 +147,7 @@ The pseudo-random numbers are plotted with N-many points with respective x,y val
 
 The comparison of the two could not be more distinct – the pseudo-random points are ‘evenly’ distributed and appear to cluster and become denser radially as the number of points increase (the mean being 0 and standard deviation being 1); the quasi-random points exhibit extreme order and patterns. This makes sense as the Sobol values have a set sequence order - we would expect emergent patterns to be quite stark. The pseudo-random numbers don't exhibit order outside of the density observed toward the mean (this is expected).
 
-![Test](images/Figure_3_2.png)
+![Test](images/Figure_3_2a.png)
 
 
 ## (Part 3.3) -  Plotting 1D Random Distributions **(15%)**
