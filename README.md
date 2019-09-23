@@ -53,7 +53,7 @@ There are a large number of examples of these kinds of queues. In London, the Un
 * [**Object Diagram**](images/Subway_Object_Diagram.png) - provides the high level overview of subway model objects.
 * [**Class Diagram**](images/Subway_Class_Diagram.png) - provides simple class detail for objects in the model.
 * [**Behavior Diagram**](images/Agent_Case_Diagram.png) - provides details of a simple subway escalator use case.
-* [**Agent / User case** (if appropriate)](model/agent_usecase_diagram.md) - provides details of (what are you providing details of)
+* [**Agent / User case** (if appropriate)](images/Agent_Case_Diagram.png) - provides details of a simple subway escalator use case.
 
 ## (Part 1.3) Subway (My Problem) Simulation **(10%)**
 
