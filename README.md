@@ -1,6 +1,5 @@
 
-# Assignment 1 - Designing Models and Analyzing Data (Template)
-(remove: **text between brackets to be removed**)
+# Assignment 1 - Designing Models and Analyzing Data 
 
 > * Participant name: Bradley 'Austin' Kriznar
 > * Project Title: SUBWAY MODEL ANALYSIS
@@ -52,7 +51,7 @@ There are a large number of examples of these kinds of queues. In London, the Un
 
 * [**Object Diagram**](images/Subway_Object_Diagram.png) - provides the high level overview of subway model objects.
 * [**Class Diagram**](images/Subway_Class_Diagram.png) - provides simple class detail for objects in the model.
-* [**Behavior Diagram**](images/Agent_Case_Diagram.png) - provides details of a simple subway escalator use case.
+* [**Behavior Diagram**](images/Behavior_Activity_Diagram.png) - provides details of a simple subway escalator use case.
 * [**Agent / User case** (if appropriate)](images/Agent_Case_Diagram.png) - provides details of a simple subway escalator use case.
 
 ## (Part 1.3) Subway (My Problem) Simulation **(10%)**
