@@ -153,11 +153,17 @@ The comparison of the two could not be more distinct – the pseudo-random point
 ## (Part 3.3) -  Plotting 1D Random Distributions **(15%)**
 
 Now, choose three different distributions to plot in 1D, or as a histogram. Choose a pseudo-random generator and generate three different distributions. Example distributions are Uniform (part 8), Normal, Exponential, Poisson, and Chi-Squared, but feel free to use any three distributions of your choice. Again, plot each distribution for five different Ns. This will result in 15 different subplots, formatted similar to the image in Part 8. Include your properly formmated 1D plots below and breifly describe what we are looking at and how things change as N is changed.
+
 [**3_3 Code**](code/3_3_Quasi_Bar_Charts.py)
 
 ![Test](images/Figure_3_3a.png)
 
-Repeat the above using a quasi-random generator. Discuss the similarities and differences.
+The standard normal and exponential histograms look relatively normal about the mean (this should be expected). With a number of bins equal to 35, the two distributions take noticeable shape between N=100 and N=500. Both begin to form ‘smooth’ curves as N increased. Conversely, the uniform distribution is all over the place. It spans the width of the area with no discernable ‘curve’; we expect this because values should be **uniformly** distributed. No significant clustering can be detected with visual inspection and 35 bins; if bin size and N where both increased then some clustering may be detected.
+
+Repeat the above using a quasi-random generator. Discuss the similarities and differences. 
+
 [**3_3 2_Code**](code/3_3_Bar_Charts.py)
 
 ![Test](images/Figure_3_3_2.png)
+
+The quasi-random distribution used the Sobol sequence and is most similar to the uniform distribution above but contains far less variation among the frequencies of the values (represented by peak height). The N=5000 histogram is virtually a square, which the respective uniform does not look nearly as representative of. The visual difference between N=100 and N=500 for the Sobol sequence and uniform distribution show this difference well.
