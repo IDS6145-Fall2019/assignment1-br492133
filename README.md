@@ -98,6 +98,7 @@ It would be useful to determine and analyze what the queue length waiting to ent
 A bar graph depicting average escalator wait time across a day, with each day represented as a separate line, could be a clear way to visualize traffic variability. It may also be interesting to see usage or non-usage data that is subway station dependent (are there escalators that cost more to operate in maintenance costs and electricity than is covered by the local ridership fare?). 
 
 **What clever way will you visualize your output with a useful infographic?**
+
 I think it would be helpful (if speaking to government officials or city planners about escalator usage) to make an infographic that concisely compares the relative usage percentage of escalators and what impacts (number of steps saved, time saved, etc.) for riders that additional escalators may provide. Also, if there are stations where the escalators are already potentially overloaded and less effective than taking the stairs. It could aesthetically look a bit like an up escalator with factoids that are showing growth going up and the converse for potential time saved, etc. going down. 
 
 
