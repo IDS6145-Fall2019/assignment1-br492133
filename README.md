@@ -16,9 +16,7 @@ The second part of the assignment explores data analysis. Data analysis and visu
 # Part 1: Designing a Model - Subway System
 Subway transportation is incredibly important for many metroplitian areas. It is magnitudes of order more effective for traffic mitigation than individuals using cars in their commutes, and so making sure existing subways queue / run efficiently is certianly a worthy priority for city planners.   
 
-There are a large number of examples of these kinds of queues. In London, the Underground logs up to 5 million journeys a day. The majority of passengers must enter the Underground via escalator tunnels, especially in the dowtown area. Ensuring appropriete passenger safety entering and exiting the subway is important for smooth operation, balanced with speed (it would make no sense to have escalators when they are slower than just taking the stairs). 
-
-(remove: Put the problem into a historical context, from what does it originate? Are there already some proposed solutions?)
+There are a large number of examples of these kinds of queues. In London, the Underground logs up to 5 million journeys a day. The majority of passengers must enter the Underground via escalator tunnels, especially in the dowtown area. Ensuring appropriete passenger safety entering and exiting the subway is important for smooth operation, balanced with speed (it would make no sense to have escalators when they are slower than just taking the stairs).
 
 
 ![Image of Subway City System](images/subway_model.png)
@@ -55,8 +53,6 @@ There are a large number of examples of these kinds of queues. In London, the Un
 
 ## (Part 1.3) Subway (My Problem) Simulation **(10%)**
 
-(remove: Describe how you would simulate this - including type of simulation, rough details, inputs, outputs, and how it will help you analyze your experimental hypothesis, or nullify your null hypothesis.)
-
 Ideally, I would use a dedicated tool to utilize for this simulation such as **Simio.** The escalator can be largely treated as a queue - people are assumed not to 'move' up or down on the escalator steps (relative to the escalator steps, they are not moving) and are 'processed' by the server at a fixed rate with a fixed speed. The stochastic flow of people into the server (escalator) would be based on sampled data (hourly, daily, weekly) collected from real turnstile or open sources. This is where the interesting part of the simulation - is the escalator too crowded? Is there a line to get onto the escalator? If so, how long is the line? How long are people waiting, on average, to actually utilize the escalator? I would base my experiment with those questions in mind. 
 
 Doing a little research, ASME standards govern the maximum escalator speed at 100 ft / min; anecdotally this seems like a fair representation to what I have personally experienced as an escalator's normal operating speed and should work as a simulated assumption. Additionally, assuming the ASME designation for step length of 8.5 in. and one person per step, the escalator can be treated roughly as the hypotenuse of an imaginary triangle (bound between the elevation gap (the rise) and the ground (the run)). That hypotenuse length dictates the server capacity in the model (hypotenuse length / 8.5 in. = approximate step number). Modeled as a queue, the 'escalator' has a server capacity equal to maximum step number; escalator users (agents) are 'processed' at a constant rate (process time = escalator speed / step number) and may enter the queue as the escalator stairs are made available **(at a constant rate )**. Escalators do not change size (the hypotenuse is fixed) and thus the queue capacity and time on escalator are constant. 
@@ -71,7 +67,7 @@ You are expected to create the python files - the code should run without errors
 
 
 ## (Part 1.5) Specifying the Inputs to a System **(10%)**
-* Specify the independent and dependent input variables of your subway escalator model
+**Specify the independent and dependent input variables of your subway escalator model**
 
 Independent Variables – 
 
@@ -85,29 +81,30 @@ Dependent Variables -
 * The **person size** is dependent on a few factors, including if they are a child (likely to be smaller and take only a single escalator step) or an adult (likely to be larger and may take a few steps up).
 * The **escalator queue entrance availability** is dependent on the number of people currently on the escalator. If the escalator is at a full steady-state, then a line will begin to form to get onto the escalator (assuming people are standing single-abreast). 
 
-* Specify where the data will come from measured subset of real data (empirical) or synthetic data
+**Specify where the data will come from measured subset of real data (empirical) or synthetic data**
 
 Ideally, direct sampling to collect real data would be done use as the base of the simulation data. That is not really likely. Luckily, a few quick searches on Google provide large set of real turnstile / usage data directly from the (Metropolitan Transportation Authority) [ http://web.mta.info/developers/download.html]. While turnstile data does not directly map onto escalator use in subways, it could be a great starting point. 
 
-* What kind of statistics are important to capture this input data
+**What kind of statistics are important to capture this input data**
 
 I think it would be important to capture basic descriptive statistics for arrival rates, escalator belt speed / size, and usage information as related to time of day / day of week.  
 
-* How do you plan to analyze the output of your model?
+**How do you plan to analyze the output of your model**
 
-It would be useful to determine and analyze what the queue length waiting to enter the escalator is on average (average wait time). That is probably the most productive question to get an answer for, especially if in a very-high traffic station such as Times Square. 
+It would be useful to determine and analyze what the queue length waiting to enter the escalator is on average (average wait time). That is probably the most productive question to get an answer for, especially if in a very-high traffic station such as Times Square or Grand Central Terminal. 
 
-* What ways will you visualize your data - charts, and graphs you will create?
+**What ways will you visualize your data - charts, and graphs you will create**
 
-A line graph depicting average escalator wait time across a day, with each day represented as a separate line, could be a clear way to visualize traffic variability. It may also be interesting to see usage or non-usage data that is subway station dependent (are there escalators that cost more to operate in maintenance costs and electricity than is covered by the local ridership fare?). 
+A bar graph depicting average escalator wait time across a day, with each day represented as a separate line, could be a clear way to visualize traffic variability. It may also be interesting to see usage or non-usage data that is subway station dependent (are there escalators that cost more to operate in maintenance costs and electricity than is covered by the local ridership fare?). 
 
-* What clever way will you visualize your output with a useful infographic?
+**What clever way will you visualize your output with a useful infographic?**
+I think it would be helpful (if speaking to government officials or city planners about escalator usage) to make an infographic that concisely compares the relative usage percentage of escalators and what impacts (number of steps saved, time saved, etc.) for riders that additional escalators may provide. Also, if there are stations where the escalators are already potentially overloaded and less effective than taking the stairs. It could aesthetically look a bit like an up escalator with factoids that are showing growth going up and the converse for potential time saved, etc. going down. 
 
 
 # Part 2: Creating a Model from Code
 
 ## (Part 2.1) **P**ortable **O**rganic **T**rouble-free **S**elf-watering System (**POTS**) Model **(10%)**
-Here [**we provide an overview**](code/POTS_system/README.md) of the **P**ortable **O**rganic **T**rouble-free **S**elf-watering System (**POTS**) Model and provide a source code template for the code found in  [**the following folder**](code/POTS_system/). Please create a **class** diagram of this model (replace the placeholder diagram). (you can use paper and pencil or a digital tool).
+Here [**we provide an overview**](code/POTS_system/README.md) of the **P**ortable **O**rganic **T**rouble-free **S**elf-watering System (**POTS**) Model and provide a source code template for the code found in  [**the following folder**](code/POTS_system/). Please create a **class** diagram of this model.
 
 [**POTS Model Class Diagram**](images/POTS_Class_Diagram.png)
 
