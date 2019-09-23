@@ -83,7 +83,7 @@ Dependent Variables -
 
 **Specify where the data will come from measured subset of real data (empirical) or synthetic data**
 
-Ideally, direct sampling to collect real data would be done use as the base of the simulation data. That is not really likely. Luckily, a few quick searches on Google provide large set of real turnstile / usage data directly from the (Metropolitan Transportation Authority) [ http://web.mta.info/developers/download.html]. While turnstile data does not directly map onto escalator use in subways, it could be a great starting point. 
+Ideally, direct sampling to collect real data would be done use as the base of the simulation data. That is not really likely. Luckily, a few quick searches on Google provide large set of real turnstile / usage data directly from the (Metropolitan Transportation Authority)[http://web.mta.info/developers/download.html] . While turnstile data does not directly map onto escalator use in subways, it could be a great starting point. 
 
 **What kind of statistics are important to capture this input data**
 
