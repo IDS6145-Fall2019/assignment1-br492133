@@ -1,23 +1,13 @@
+import math
 class Person_Class:
-    ''' A general subway user class '''
+    ''' A class for people riding the subway'''
 
-    def __init__(self, n, w, wet, c):
-        '''Set the name and vertices of the shape'''
-        self.name = n
-        self.weight = w
-        self.water = wet
-        self.nutrients = c
+    def __init__(self, name, l, r):
+        '''Intializes the Person_Class'''
+        self.name = name
+        self.length = l
+        self.radius = r
 
+    def Person_Name(self):
+        print('I am a subway rider -', self.name)
 
-    def __str__(self):
-        '''Definition for the print statement'''
-        return "Person Class: '{}' of type ({}) weighs {} grams.".format(
-            self.name,str(self.__class__.__name__),
-            str(self.weight))
-
-
-    def ProvideNutrients(self):
-        '''Every vegtable grows differently'''
-        raise NotImplementedError("Please Implement the Grow method!")
-        #This containts a check to make sure subclasses implement this.
-        return None
